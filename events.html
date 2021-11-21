@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <script>
+        function displayMessage() {
+            // alert("hello baburam");
+            document.getElementById("demo1").innerHTML = "hello world";
+
+        }
+        // displayMessage();
+        function showMessage() {
+            alert("you clicked twice")
+        }
+    </script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body onload="alert('welcome back')">
+    <h1 id="demo1">Baburam Adhiikari </h1>
+    <!-- <button onclick="alert('you clicked here')">Click here</button> -->
+
+    <button onclick="displayMessage()">Click here</button>
+    <button ondblclick="showMessage()">double click me</button>
+    <div onmouseover="alert('mouse over')" onmouseout="alert('mouse out')"></div>
+
+</body>
+
+</html>

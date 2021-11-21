@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <script>
+
+        // var id = setInterval(function(){
+        //     alert('hello babu');
+        // }, 3000);
+        // function stopIinerval() {
+        //     clearInterval(id);
+
+        // }
+
+
+    </script>
+</head>
+
+<body>
+    <!-- <button onclick="stopIinerval()"> stop interval</button> -->
+    <h1 >Time</h1>
+    <p id="time"></p>
+
+    <script>
+        setInterval(function() {
+        var dt = new Date().toTimeString();
+        document.getElementById("time").innerHTML=dt;
+        }, 1000)
+
+    </script>
+</body>
+
+</html>

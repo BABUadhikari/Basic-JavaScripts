@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <script>
+        var name ="hello world";
+        document.write(name);
+        document.write("<br> the lenght of string is " + name.length); //to find length
+        document.write("<br>" + name.toUpperCase()); // to print in upper case
+        document.write("<br>" + name.toLowerCase()); // print in lower case 
+
+
+        // check string
+        document.write(name.startsWith("have")); //endsWith   includes
+        // filter 
+        document.write("<br>" + name.trim());
+
+        // convert to string 
+        var num=10;
+        document.write("<br>" + num.toString());
+
+// to convert string to array
+        var arr=name.split("");
+        document.write(arr)
+
+        // to repeat the string
+        var x=name.repeat(5);
+        document.write(x);
+
+        var newStr=name.replace("hello", "HI");// to replace the particular worl
+        document.write("<br>" + newStr)
+
+        var newStr=name.slice(0,2);
+        document.write("<br>" + newStr);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

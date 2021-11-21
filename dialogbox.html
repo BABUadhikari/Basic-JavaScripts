@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript</title>
+    
+</head>
+<body>
+    <h1>Hello world</h1>
+    <p id="demo"></p>
+    <button onclick="myFunction()">show prompt</button>
+    <script>
+        // window.alert("alert \n hello there");
+        // var test = confirm('are you sure?');
+        // document.write(test);
+        // if(test){
+        //     document.getElementById("demo").innerHTML='Thank you';
+        // }
+        // else{
+        //     document.getElementById('demo').innerHTML = "sorry";
+        // }
+
+        function myFunction() {
+        var name = prompt("what is your name?");
+        console.log(typeof name);
+        if(name==null){
+            document.getElementById("demo").innerHTML='please enter your name';
+        }
+        else{
+        document.getElementById("demo").innerHTML= 'welcome back '+name;
+        }    
+        }
+        // document.write(name);
+
+    </script>
+    
+</body>
+</html>

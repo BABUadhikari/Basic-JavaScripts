@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <script>
+        // array is use to hold more then one data value
+        var names = ["babu", "ram", "hari", "shyam", "10", "999"];
+        console.log(names.length); // to find the length of array
+        // syntex: document.write(array_name[value]);
+        // the initial value starts from 0
+        // document.write(names[3]);
+        // document.write(names[2]);
+        
+        
+        // for (var i=0; i<6; i++){
+        //     document.write(names[i] + "<br>");
+        // }
+//  when the array element is added manually then we can add the data automatically according to the lenght of array 
+        for (var i=0; i<names.length; i++){
+            document.write(names[i] + "<br>");
+        }
+        // to change the array element 
+
+        names[0]= "krishna"
+        document.write("<br> After the change: " + names[0]);
+
+        document.write("<br>"+ names);
+        // to add new element
+        names [names.length] = "101";
+        document.write("<br>" + names);
+
+        // to get last element 
+        document.write("<br>"+ names[names.length-1]);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
